@@ -10,14 +10,14 @@ const Create = () => {
 
     return (
         <form className="p-5 h-full">
-            <h2 className="text-2xl font-semibold">Create</h2>
+            <h2 className="text-2xl font-semibold">New Post</h2>
             <div className="w-full h-1/2 my-6">
                 <textarea
                     placeholder="Start typing..."
                     name="post-content"
                     onChange={event => setPostLength(event.target.value.length)}
                     maxLength={MAX_POST_LENGTH}
-                    className="px-3 py-2 border b-slate-400 w-full h-full resize-none"
+                    className="px-2 py-2 w-full h-full resize-none"
                 ></textarea>
                 <span className={isMaxLength ? "text-red-500" : ""}>
                     {postLength} / {MAX_POST_LENGTH}
